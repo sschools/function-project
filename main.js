@@ -100,3 +100,10 @@ console.log(greet("Elvis"));
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+function madLib(noun1, noun2, adj, verb) {
+  let sentence = "The " + noun1 + " went for a walk with the " + noun2 + ", and they " + verb + " a " + adj + " tomato.";
+  return sentence;
+}
+
+console.log(madLib("cat", "dog", "filthy", "ate"));
+console.log(madLib("tree", "face", "awesome", "drove"));
