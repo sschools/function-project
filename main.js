@@ -2,18 +2,38 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // Then, write and example of using the function.
 
-function max(){
-    // Your answer here
+function max(x, y){
+    if (x === y) {
+      return "The numbers are equal.";
+    } else if (x < y) {
+      return y + " is larger.";
+    } else {
+      return x + " is larger.";
+    }
 }
-
-
+console.log(max(3,5));
+console.log(max(8,1));
+console.log(max(4,4));
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // Then, write and example of using the function.
 
-function maxOfThree(){
-    // Your answer here
+function maxOfThree(x, y, z) {
+    if (x > y && x > z) {
+      return x + " is largest.";
+    } else if (y > x && y > z) {
+      return y + " is largest.";
+    } else if (z > x && z > y) {
+      return z + " is largest.";
+    } else {
+      return "There is no largest number among the three."
+    }
 }
+
+console.log(maxOfThree(5,3,1));
+console.log(maxOfThree(5,13,1));
+console.log(maxOfThree(5,3,21));
+console.log(maxOfThree(5,3,5));
 
 
 // 3.
@@ -21,15 +41,18 @@ function maxOfThree(){
 // Then, write and example of using the function.
 
 function isVowel(char){
-    // Your answer here
+    return (char === "a" || char === "e" || char === "i" || char === "o" || char === "u");
 }
 
-
+console.log(isVowel("e"));
+console.log(isVowel("g"));
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // Then, write and example of using the function.
-
-
+function sum(x, y) {
+  return x + y;
+}
+console.log(sum(21,42));
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
