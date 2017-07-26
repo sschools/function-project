@@ -57,22 +57,29 @@ console.log(sum(21,42));
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
-
-
+function avg(x, y, z) {
+  return (x + y + z)/3;
+}
+console.log(avg(12, 22, 26));
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
-
-
+function getLength(x) {
+  return x.length;
+}
+console.log(getLength("How long is this sentence?"));
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
-
-
+function greaterThan(x, y) {
+  return (y > x);
+}
+console.log(greaterThan(3,9));
+console.log(greaterThan(13,9));
 
 // 8.
 // Write a function called `greet` that takes a
@@ -80,8 +87,10 @@ console.log(sum(21,42));
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 // Then, write and example of using the function.
-
-
+function greet(name) {
+  return "Hello, " + name +"!";
+}
+console.log(greet("Elvis"));
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
